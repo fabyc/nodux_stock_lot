@@ -12,6 +12,7 @@ def register():
         SaleLine,
         Move,
         ShipmentIn,
+        ShipmentInternal,
         module='nodux_stock_lot', type_='model')
     Pool.register(
         SplitMove,
