@@ -4,10 +4,15 @@
 from trytond.pool import Pool
 from .stock import *
 from .sale import *
-
+from .shipment import *
 
 def register():
     Pool.register(
         Lot,
         SaleLine,
+        Move,
+        ShipmentIn,
         module='nodux_stock_lot', type_='model')
+    Pool.register(
+        SplitMove,
+        module='nodux_stock_lot', type_='wizard')
