@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<data>
+    <xpath expr="/tree" position="replace_attributes">
+        <tree string="Moves" editable="bottom"/>
+    </xpath>
+
+    <xpath expr="/tree/field[@name='lot']" position="after">
+      <field name="num_lot"/>
+    </xpath>
+
+    <xpath expr="/tree/field[@name='lot']" position="replace">
+        <field name="lot" tree_invisible="1"/>
+    </xpath>
+</data>
